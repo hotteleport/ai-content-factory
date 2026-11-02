@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-content-factory"
+version = "2.0.0"
+description = "Turns one-line ideas into reviewed social media drafts using a restricted AI agent"
+requires-python = ">=3.10"
+dependencies = [
+    "python-dotenv>=1.0",
+    "requests>=2.31",
+    "telethon>=1.36",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

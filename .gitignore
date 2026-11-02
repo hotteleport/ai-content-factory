@@ -1,0 +1,16 @@
+# Secrets and account access
+.env
+*.session
+*.session-journal
+
+# Private prompts, style rules, posts and runtime state
+private/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+
+.DS_Store
